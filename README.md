@@ -1,7 +1,7 @@
 # 5025211251_MuhammadAhyunIrsyada_TugasTCP-UDP
 
-##TCP 
-###NO 1 
+## TCP 
+### NO 1 
 
 **Soal** 
 What is the IP address and TCP port number used by the client computer (source) that is transferring the file to gaia.cs.umass.edu?
@@ -17,7 +17,7 @@ What is the IP address and TCP port number used by the client computer (source) 
   
 -   Setelah melakukan trace maka IP address dari client computer adalah `192.168.43.28` dan menggunakan port 55965
 
-###NO 2
+### NO 2
 
 **Soal**
 What is the IP address of gaia.cs.umass.edu? On what port number is it sending and receiving TCP segments for this connection?
@@ -28,7 +28,7 @@ What is the IP address of gaia.cs.umass.edu? On what port number is it sending a
 -   Untuk mencari Port dari `gaia.cs.umass.edu` bisa dengan cara melakukan filter di wireshark dengan script `ip.addr == 128.119.245.12` sama seperti soal sebelumnya
 -   Jadi Port dari `gaia.cs.umass.edu` adalah `80`
 
-###NO 3
+### NO 3
 
 **soal**
 What is the sequence number of the TCP SYN segment that is used to initiate the TCP connection between the client computer and gaia.cs.umass.edu? What is it in this TCP segment that identifies the segment as a SYN segment?Will the TCP receiver in this session be able to use Selective Acknowledgments?
@@ -45,6 +45,6 @@ What is the sequence number of the TCP SYN segment that is used to initiate the 
 
 -   Jadi Di dalam packet tersebut terdapat flag SYN: Set yang menandakan bahwa packet tersebut adalah SYN segment, sehingga bisa digunakan sebagai selective acknowledgments
 
-###NO 4
+### NO 4
 
 **Soal**
