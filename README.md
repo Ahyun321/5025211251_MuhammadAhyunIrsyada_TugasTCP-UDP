@@ -9,11 +9,11 @@ What is the IP address and TCP port number used by the client computer (source) 
 **Penyelesaian**
 -   Pertama tama cari IP dari `gaia.cs.umass.edu` dengan cara melakukan Ping di terminal
 
-![ss](Bukti/tcp01.png)
+    ![ss](Bukti/tcp01.png)
   
 -   Lalu filter IP dari `gaia.cs.umass.edu` yang mana IPnya adalah `128.119.245.12` dengan script `ip.addr == 128.119.245.12`
 
-![ss](Bukti/tcp02.png)
+    ![ss](Bukti/tcp02.png)
   
 -   Setelah melakukan trace maka IP address dari client computer adalah `192.168.43.28` dan menggunakan port 55965
 
@@ -34,9 +34,15 @@ What is the IP address of gaia.cs.umass.edu? On what port number is it sending a
 What is the sequence number of the TCP SYN segment that is used to initiate the TCP connection between the client computer and gaia.cs.umass.edu? What is it in this TCP segment that identifies the segment as a SYN segment?Will the TCP receiver in this session be able to use Selective Acknowledgments?
 
 **Penyelesaian**
--   Untuk mencari tahu sequence number dari segmen TCP SYN adalah dengan cara menekan paket pengiriman dengan info `[SYN]`  lalu cari `Transmission Control Protocol`,lalu tekan dan cari `sequence number (raw)` dan `sequence number ` (ss3)
+-   Untuk mencari tahu sequence number dari segmen TCP SYN adalah dengan cara menekan paket pengiriman dengan info `[SYN]`  lalu cari `Transmission Control Protocol`,lalu tekan dan cari `sequence number (raw)` dan `sequence number `
+
+    ![ss](Bukti/tcp03.png)
+  
 -   Jadi sequence number dari TCP SYN tersebut adalah `sequence number = 0` atau `sequence number (raw) = 1375341180`
--   Untuk mencari tahu Penerima TCP menggunakan Selective Acknowledgments adalah dengan membuka `Flags :` (ss4)
+-   Untuk mencari tahu Penerima TCP menggunakan Selective Acknowledgments adalah dengan membuka `Flags :`
+
+    ![ss](Bukti/tcp04.png)
+
 -   Jadi Di dalam packet tersebut terdapat flag SYN: Set yang menandakan bahwa packet tersebut adalah SYN segment, sehingga bisa digunakan sebagai selective acknowledgments
 
 ###NO 4
