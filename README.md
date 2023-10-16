@@ -51,7 +51,10 @@ What is the sequence number of the TCP SYN segment that is used to initiate the 
     What is the sequence number of the SYNACK segment sent by gaia.cs.umass.edu to the client computer in reply to the SYN? What is it in the segment that identifies the segment as a SYNACK segment? What is the value of theAcknowledgementfield in the SYNACK segment? How did gaia.cs.umass.edu determine that value?
 
 **Penyelesaian**   
--    Untuk mencari tahu sequence number dari segmen TCP SYN adalah dengan cara menekan paket pengiriman dengan info `[SYN,ACK]`  lalu cari `Transmission Control Protocol`,lalu tekan dan cari `sequence number (raw)` dan `sequence number ` (ss5)
+-    Untuk mencari tahu sequence number dari segmen TCP SYN adalah dengan cara menekan paket pengiriman dengan info `[SYN,ACK]`  lalu cari `Transmission Control Protocol`,lalu tekan dan cari `sequence number (raw)` dan `sequence number `
+
+  ![ss](Bukti/tcp05.png)
+
 -    Jadi sequence number dari TCP SYNACK tersebut adalah `sequence number = 0` atau `sequence number (raw) = 872022918`
 -    Untuk mencari acknowledgement number of the SYNACK segment adalah dengan number dari SYN segment ditambah 1 `(ACK=Seq no+1)` atau mencari `acknowledgement number` dan `acknowledgement number (raw)` di `Transmission Control Protocol` .
 -    Jadi acknowledgement number dari TCP SYNACK tersebut adalah `acknowledgement number = 1` atau `acknowledgement number (raw) = 87527077`
